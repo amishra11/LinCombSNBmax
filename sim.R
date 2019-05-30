@@ -232,34 +232,8 @@ stdBiv <- biVar.simData <- function(n,prev,mu.D = c(1,1),sigmaD = diag(1,nrow = 
 
 
 #### N = 500
+### This line will run a single set of simulations 
 stdNorm.n500.w1 <- simMany(B = 500, n = 500,CB = (1/9),
                            intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 349,
                            datFun = stdBiv,thetaLength = 3)
-stdNorm.n500.w2 <- simMany(B = 500, n = 500,CB = (2/9),
-                           intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 111,
-                           datFun = stdBiv,thetaLength = 3,prevCalc = TRUE)
-stdNorm.n500.w05 <- simMany(B = 500, n = 500,CB = (0.5/9),
-                            intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 111,
-                            datFun = stdBiv,thetaLength = 3,prevCalc = TRUE)
 
-#### N = 800
-stdNorm.n800.w1 <- simMany(B = 500, n = 800,CB = (1/9),
-                           intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 111,
-                           datFun = stdBiv,thetaLength = 3)
-stdNorm.n800.w2 <- simMany(B = 500, n = 800,CB = (2/9),
-                           intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 111,
-                           datFun = stdBiv,thetaLength = 3,prevCalc = TRUE)
-stdNorm.n800.w05 <- simMany(B = 500, n = 800,CB = (0.5/9),
-                            intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 111,
-                            datFun = stdBiv,thetaLength = 3,prevCalc = TRUE)
-
-#### N = 1000
-stdNorm.n1000.w1 <- simMany(B = 500, n = 1000,CB = (1/9),
-                            intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 349,
-                            datFun = stdBiv,thetaLength = 3,prevCalc = TRUE)
-stdNorm.n1000.w2 <- simMany(B = 500, n = 1000,CB = (2/9),
-                            intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 111,
-                            datFun = stdBiv,thetaLength = 3,prevCalc = TRUE)
-stdNorm.n1000.w05 <- simMany(B = 500, n = 1000,CB = (0.5/9),
-                             intVal = NULL,hPower = 0.5,prev = 0.1,int.seed = 111,
-                             datFun = stdBiv,thetaLength = 3,prevCalc = TRUE)
