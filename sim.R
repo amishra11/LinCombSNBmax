@@ -213,7 +213,7 @@ simMany <- function(B,n,CB,intVal=NULL,hPower,prev=NULL,prevCalc=TRUE,
 
 
 
-###### 1: ####### Std Bivariate Normal Case #######
+###### 1: Simulation for Std Bivariate Normal Case #######
 stdBiv <- biVar.simData <- function(n,prev,mu.D = c(1,1),sigmaD = diag(1,nrow = 2),
                                     sigmaND = diag(1,nrow=2),seed){
   set.seed(seed)
